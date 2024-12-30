@@ -24,12 +24,12 @@ export default function Contact() {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-gray-50 to-gray-100">
+    <div  className="min-h-screen bg-gradient-to-b from-gray-50 to-gray-100">
       <div className="max-w-7xl mx-auto px-4 py-16 sm:px-6 lg:px-8">
         <div className="max-w-lg mx-auto md:max-w-none md:grid md:grid-cols-2 md:gap-8">
           
           {/* Contact Information */}
-          <div>
+          <div className=' bg-emerald-300 border border-gray-300 rounded-lg p-8'>
             <h2 className="text-3xl font-bold text-gray-900 sm:text-4xl">
               Let's Connect
             </h2>
@@ -55,14 +55,14 @@ export default function Contact() {
             </div>
 
             <div className="mt-8">
-              <div className="flex space-x-6">
-                <a href="#" className="text-gray-500 hover:text-gray-600">
+              <div className="flex space-x-6 ">
+                <a href="#" className=" hover:bg-green-300 rounded-full border border-gray-500 p-1 bg-green-500">
                   <Github className="h-6 w-6" />
                 </a>
-                <a href="#" className="text-gray-500 hover:text-gray-600">
+                <a href="#" className=" hover:bg-yellow-200 rounded-full border border-gray-500 p-1 bg-yellow-500">
                   <Linkedin className="h-6 w-6" />
                 </a>
-                <a href="#" className="text-gray-500 hover:text-gray-600">
+                <a href="#" className=" hover:bg-cyan-500 rounded-full border border-gray-500 p-1 bg-blue-500">
                   <Twitter className="h-6 w-6" />
                 </a>
               </div>
