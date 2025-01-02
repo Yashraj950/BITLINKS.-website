@@ -5,8 +5,31 @@ const Shorten = () => {
   const [url, setUrl] = useState("");
   const [shortUrl, setShortUrl] = useState("");
   const [generated, setGenerated] = useState(false);
+  
+  const generate = async () => {
+   
+    const myHeaders = new Headers();
+    myHeaders.append("Content-Type", "application/json");
 
-  const handleChange = (first) => {};
+    const raw = JSON.stringify({
+      url: url,
+      shorturl: shortUrl,
+    });
+    const requestOptions = {
+      method: "POST",
+      headers: myHeaders,
+      body: raw,
+      redirect: "follow",
+    };
+
+    fetch("http://localhost:3000/api/generate", requestOptions)
+      .then((response) => response.json())
+      .then((result) => {console.log(result)
+        alert(result.message)
+     })
+      .catch((error) => console.log("error", error));
+  };
+
   return (
     <div className="mx-auto max-w-lg bg-purple-100 my-16 p-8 rounded-lg flex flex-col gap-4">
       <h1 className="font-bold text-2xl">Generate your short URLs</h1>
@@ -25,7 +48,7 @@ const Shorten = () => {
           placeholder="Enter your preferred short URL text"
           onChange={e=> setShortUrl(e.target.value)}
         />
-        <button className="bg-purple-600 rounded-lg hover:bg-purple-500 shadow-lg p-3 py-1 my-3 text-white">
+        <button onClick={generate} className="bg-purple-600 rounded-lg hover:bg-purple-500 shadow-lg p-3 py-1 my-3 text-white">
           Generate
         </button>
       </div>
