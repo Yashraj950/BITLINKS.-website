@@ -24,7 +24,7 @@ export default function Contact() {
   };
 
   return (
-    <div  className="min-h-screen bg-gradient-to-b from-gray-50 to-gray-100">
+    <div  className="bg-gradient-to-b from-gray-50 to-gray-100">
       <div className="max-w-7xl mx-auto px-4 py-16 sm:px-6 lg:px-8">
         <div className="max-w-lg mx-auto md:max-w-none md:grid md:grid-cols-2 md:gap-8">
           

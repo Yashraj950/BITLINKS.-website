@@ -3,8 +3,9 @@ import Link from "next/link";
 
 export default function Home() {
   return (
-    <main className="bg-purple-100">
-      <section className="grid grid-cols-2 h-[50vh]">
+    
+    <main className="bg-purple-100 my-20">
+      <section className="grid grid-cols-2 ">
         <div className="flex flex-col gap-4 items-center justify-center">
           <p className="text-4xl font-bold">
             The best place to shorten your links

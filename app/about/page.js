@@ -3,7 +3,7 @@ import React from "react";
 const About = () => {
   return (
     <div className="p-8 font-sans leading-relaxed bg-gradient-to-r text-black from-purple-500  to-pink-400">
-      <div className="flex flex-col md:flex-row items-center mb-16 px-3">
+      <div className="flex flex-col md:flex-row items-center  px-3">
         <img
           src="https://png.pngtree.com/png-vector/20241023/ourlarge/pngtree-transparent-computer-learning-girl-png-image_13523179.png"
           className="w-64 h-64 object-cover rounded-full shadow-lg mb-6 md:mb-0 md:mr-6 border-4 border-blue-400"
